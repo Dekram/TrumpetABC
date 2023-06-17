@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">Trumpet ABC</string>
+    <string name="fingeringsButton">fingerings</string>
+    <string name="scalesButton">scales</string>
+    <string name="note_s_cardsButton">note\'s cards</string>
+    <string name="major_scale_header">Major scale</string>
+    <string name="minor_scale_header">Minor scale</string>
+
+    <string-array name="major_scales">
+        <item>C-dur</item>
+        <item>D-dur</item>
+        <item>A-dur</item>
+        <item>E-dur</item>
+        <item>H-dur</item>
+        <item>Fis-dur</item>
+        <item>Cis-dur</item>
+        <item>G-dur</item>
+        <item>F-dur</item>
+        <item>B-dur</item>
+        <item>Es-dur</item>
+        <item>As-dur</item>
+        <item>Des-dur</item>
+        <item>Ges-dur</item>
+        <item>Ces-dur</item>
+    </string-array>
+    <string-array name="minor_scales">
+        <item>a-moll</item>
+        <item>h-moll</item>
+        <item>fis-moll</item>
+        <item>cis-moll</item>
+        <item>gis-moll</item>
+        <item>dis-moll</item>
+        <item>ais-moll</item>
+        <item>d-moll</item>
+        <item>g-moll</item>
+        <item>c-moll</item>
+        <item>f-moll</item>
+        <item>b-moll</item>
+        <item>es-moll</item>
+        <item>as-moll</item>
+        <item>e-moll</item>
+    </string-array>
 </resources>

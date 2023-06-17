@@ -7,17 +7,21 @@
     android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/toFingerings"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:background="@drawable/style_button"
+        android:clickable="true"
         android:fontFamily="@font/pangolin"
-        android:text="fingerings"
+        android:gravity="center"
+        android:text="@string/fingeringsButton"
+        android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:cornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,39 +29,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/toScales"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:background="@drawable/style_button"
+        android:clickable="true"
         android:fontFamily="@font/pangolin"
-        android:text="scales"
+        android:gravity="center"
+        android:text="@string/scalesButton"
+        android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:cornerRadius="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/toFingerings" />
 
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/toNotesCards"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="64dp"
+        android:background="@drawable/style_button"
+        android:clickable="true"
         android:fontFamily="@font/pangolin"
-        android:text="note's cards"
+        android:gravity="center"
+        android:text="@string/note_s_cardsButton"
+        android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:cornerRadius="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toScales" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
