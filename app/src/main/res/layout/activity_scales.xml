@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
     android:orientation="horizontal"
+    android:padding="32dp"
     tools:context=".ScalesActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/scales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -33,6 +34,9 @@
         android:layout_marginStart="8dp"
         android:textSize="16sp"
         android:text="@string/minor_scale_header"
+        android:fontFamily="@font/pangolin"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/minor_spinner"
         app:layout_constraintStart_toEndOf="@+id/minor_spinner"
         app:layout_constraintTop_toTopOf="@+id/minor_spinner" />
@@ -41,9 +45,10 @@
         android:id="@+id/minor_spinner"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
         android:entries="@array/minor_scales"
+        android:theme="@style/spinnerTheme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,6 +59,9 @@
         android:layout_marginEnd="8dp"
         android:textSize="16sp"
         android:text="@string/major_scale_header"
+        android:fontFamily="@font/pangolin"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/major_spinner"
         app:layout_constraintEnd_toStartOf="@+id/major_spinner"
         app:layout_constraintTop_toTopOf="@+id/major_spinner" />
@@ -62,9 +70,10 @@
         android:id="@+id/major_spinner"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
         android:entries="@array/major_scales"
+        android:theme="@style/spinnerTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
