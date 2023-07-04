@@ -3,6 +3,7 @@ package com.dekram.trumpetabc
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Note
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         scales.setOnClickListener {
             val intent = Intent(this, ScalesActivity::class.java)
+            startActivity(intent)
+        }
+
+        notesCards.setOnClickListener {
+            val intent = Intent(this, NotesCardActivity::class.java)
             startActivity(intent)
         }
     }
