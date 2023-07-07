@@ -21,7 +21,8 @@
         </activity>
         <activity
             android:name=".NotesCardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="fullSensor"/>
         <activity
             android:name=".ScalesActivity"
             android:exported="false"
