@@ -43,14 +43,14 @@ class PagerAdapter(private val context: Context, private val notesNames: List<St
         holder.notesCard.text = notesNames[position]
         holder.notesView.setImageResource(
             when(position) {
-                0 -> R.drawable.ces_dur
-                1 -> R.drawable.b_dur
-                2 -> R.drawable.des_dur
-                3 -> R.drawable.a_dur
-                4 -> R.drawable.b_moll
-                5 -> R.drawable.e_dur
-                6 -> R.drawable.f_dur
-                else -> R.drawable.b_moll
+                0 -> R.drawable.scales_ces_dur
+                1 -> R.drawable.scales_b_dur
+                2 -> R.drawable.scales_des_dur
+                3 -> R.drawable.scales_a_dur
+                4 -> R.drawable.scales_b_moll
+                5 -> R.drawable.scales_e_dur
+                6 -> R.drawable.scales_f_dur
+                else -> R.drawable.scales_b_moll
             }
         )
     }
