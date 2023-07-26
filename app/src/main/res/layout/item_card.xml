@@ -17,27 +17,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/notesView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/play_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes_card" />
+        app:layout_constraintTop_toBottomOf="@+id/notes_card">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/play_button"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:layout_marginBottom="64dp"-->
-<!--        android:src="@drawable/play"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
+        <ImageView
+            android:id="@+id/notesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToOutline="true"
+            android:scaleType="fitCenter" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        android:src="@drawable/notes_cards_play_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.dekram.trumpetabc
 
 import android.content.Context
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +16,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class NotesCardActivity : AppCompatActivity() {
 
-    private lateinit var playButton: ImageView
     private lateinit var viewPager: ViewPager2
     private lateinit var tabs: TabLayout
     private val tabTitles = arrayOf("C", "D", "E", "F", "G", "A", "B")
@@ -43,22 +43,43 @@ class PagerAdapter(private val context: Context, private val notesNames: List<St
         holder.notesCard.text = notesNames[position]
         holder.notesView.setImageResource(
             when(position) {
-                0 -> R.drawable.scales_ces_dur
-                1 -> R.drawable.scales_b_dur
-                2 -> R.drawable.scales_des_dur
-                3 -> R.drawable.scales_a_dur
-                4 -> R.drawable.scales_b_moll
-                5 -> R.drawable.scales_e_dur
-                6 -> R.drawable.scales_f_dur
-                else -> R.drawable.scales_b_moll
+                0 -> R.drawable.nc1_gis0
+                1 -> R.drawable.nc2_a0
+                2 -> R.drawable.nc3_ais0
+                3 -> R.drawable.nc4_b0
+                4 -> R.drawable.nc5_c1
+                5 -> R.drawable.nc6_cis1
+                6 -> R.drawable.nc7_d1
+                else -> 0
             }
         )
+
+        val mp3files = listOf(
+            R.raw.sounds_gis0,
+            R.raw.sounds_a0,
+            R.raw.sounds_ais0,
+            R.raw.sounds_b0,
+            R.raw.sounds_c1,
+            R.raw.sounds_cis1,
+            R.raw.sounds_d1
+        )
+        val mp3file = mp3files[position]
+        holder.bind(mp3file)
     }
 
     override fun getItemCount(): Int = notesNames.size
 
-    inner class PageHolder(view: View): RecyclerView.ViewHolder(view){
-        val notesCard: TextView = view.findViewById(R.id.notes_card)
-        val notesView: ImageView = view.findViewById(R.id.notesView)
+
+    inner class PageHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        val notesCard: TextView = itemView.findViewById(R.id.notes_card)
+        val notesView: ImageView = itemView.findViewById(R.id.notesView)
+        val playButton: ImageView = itemView.findViewById(R.id.play_button)
+
+        fun bind(mp3file: Int) {
+            playButton.setOnClickListener {
+                val mediaPlayer: MediaPlayer = MediaPlayer.create(itemView.context, mp3file)
+                mediaPlayer.start()
+            }
+        }
     }
 }
