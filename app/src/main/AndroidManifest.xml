@@ -22,7 +22,7 @@
         <activity
             android:name=".NotesCardActivity"
             android:exported="false"
-            android:screenOrientation="fullSensor"/>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ScalesActivity"
             android:exported="false"

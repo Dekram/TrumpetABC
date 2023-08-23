@@ -9,72 +9,93 @@
     android:padding="32dp"
     tools:context=".ScalesActivity">
 
-    <ImageView
-        android:id="@+id/scales"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/style_scale_window"
-        android:clipToOutline="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/scales_c_dur"
+        app:cardCornerRadius="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/minor_spinner_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textSize="16sp"
-        android:text="@string/minor_scale_header"
-        android:fontFamily="@font/pangolin"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/minor_spinner"
-        app:layout_constraintStart_toEndOf="@+id/minor_spinner"
-        app:layout_constraintTop_toTopOf="@+id/minor_spinner" />
+        <ImageView
+            android:id="@+id/scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scales_c_dur"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/minor_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="24dp"
-        android:entries="@array/minor_scales"
-        android:theme="@style/spinnerTheme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
 
-    <TextView
-        android:id="@+id/major_spinner_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:textSize="16sp"
-        android:text="@string/major_scale_header"
-        android:fontFamily="@font/pangolin"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/major_spinner"
-        app:layout_constraintEnd_toStartOf="@+id/major_spinner"
-        app:layout_constraintTop_toTopOf="@+id/major_spinner" />
+            <TextView
+                android:id="@+id/minor_spinner_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/minor_scale_header"
+                android:fontFamily="@font/pangolin"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/major_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="64dp"
-        android:entries="@array/major_scales"
-        android:theme="@style/spinnerTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Spinner
+                android:id="@+id/minor_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/minor_scales"
+                android:theme="@style/spinnerTheme" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+
+            <TextView
+                android:id="@+id/major_spinner_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/pangolin"
+                android:text="@string/major_scale_header"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/major_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/major_scales"
+                android:theme="@style/spinnerTheme" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

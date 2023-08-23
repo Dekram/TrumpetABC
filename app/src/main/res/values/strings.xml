@@ -4,7 +4,7 @@
     <string name="scalesButton">scales</string>
     <string name="note_s_cardsButton">note\'s cards</string>
     <string name="major_scale_header">Major scale:</string>
-    <string name="minor_scale_header">:Minor scale</string>
+    <string name="minor_scale_header">Minor scale:</string>
 
     <string-array name="major_scales">
         <item>C-dur</item>
