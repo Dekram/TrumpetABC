@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="ru">
+    <string name="app_name">Trumpet ABC</string>
+    <string name="fingeringsButton">аппликатура</string>
+    <string name="scalesButton">тональности</string>
+    <string name="note_s_cardsButton">Карточки нот</string>
+    <string name="major_scale_header">Мажорная тональность:</string>
+    <string name="minor_scale_header">Минорная тональность:</string>
+
+    <string-array name="major_scales">
+        <item>До</item>
+        <item>Соль</item>
+        <item>Ре</item>
+        <item>Ля</item>
+        <item>Ми</item>
+        <item>Си</item>
+        <item>Фа-диез</item>
+        <item>До-диез</item>
+        <item>Фа</item>
+        <item>Си-бемоль</item>
+        <item>Ми-бемоль</item>
+        <item>Ля-бемоль</item>
+        <item>Ре-бемоль</item>
+        <item>Соль-бемоль</item>
+        <item>До-бемоль</item>
+    </string-array>
+    <string-array name="minor_scales">
+        <item>Ля</item>
+        <item>Ми</item>
+        <item>Си</item>
+        <item>Фа-диез</item>
+        <item>До-диез</item>
+        <item>Соль-диез</item>
+        <item>Ре-диез</item>
+        <item>Ля-диез</item>
+        <item>Ре</item>
+        <item>Соль</item>
+        <item>До</item>
+        <item>Фа</item>
+        <item>Си-бемоль</item>
+        <item>Ми-бемоль</item>
+        <item>Ля-бемоль</item>
+    </string-array>
+</resources>
