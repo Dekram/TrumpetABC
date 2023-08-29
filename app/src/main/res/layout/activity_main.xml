@@ -24,14 +24,14 @@
         android:textSize="32sp"
         android:textStyle="bold"
         app:cornerRadius="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/toScales"
+        app:layout_constraintBottom_toTopOf="@+id/toTones"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/toScales"
+        android:id="@+id/toTones"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="64dp"
@@ -75,6 +75,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toScales" />
+        app:layout_constraintTop_toBottomOf="@+id/toTones" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

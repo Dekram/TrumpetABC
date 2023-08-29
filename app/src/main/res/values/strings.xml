@@ -6,7 +6,7 @@
     <string name="major_scale_header">Major tone:</string>
     <string name="minor_scale_header">Minor tone:</string>
 
-    <string-array name="major_scales">
+    <string-array name="major_tones">
         <item>C-dur</item>
         <item>G-dur</item>
         <item>D-dur</item>
@@ -23,7 +23,8 @@
         <item>Ges-dur</item>
         <item>Ces-dur</item>
     </string-array>
-    <string-array name="minor_scales">
+
+    <string-array name="minor_tones">
         <item>a-moll</item>
         <item>e-moll</item>
         <item>h-moll</item>

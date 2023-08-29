@@ -3,20 +3,19 @@ package com.dekram.trumpetabc
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Note
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var fingerings: TextView
-    private lateinit var scales: TextView
+    private lateinit var tones: TextView
     private lateinit var notesCards: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         fingerings = findViewById(R.id.toFingerings)
-        scales = findViewById(R.id.toScales)
+        tones = findViewById(R.id.toTones)
         notesCards = findViewById(R.id.toNotesCards)
 
         fingerings.setOnClickListener {
@@ -24,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        scales.setOnClickListener {
-            val intent = Intent(this, ScalesActivity::class.java)
+        tones.setOnClickListener {
+            val intent = Intent(this, TonesActivity::class.java)
             startActivity(intent)
         }
 

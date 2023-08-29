@@ -7,7 +7,7 @@
     <string name="major_scale_header">Мажорная тональность:</string>
     <string name="minor_scale_header">Минорная тональность:</string>
 
-    <string-array name="major_scales">
+    <string-array name="major_tones">
         <item>До</item>
         <item>Соль</item>
         <item>Ре</item>
@@ -24,7 +24,8 @@
         <item>Соль-бемоль</item>
         <item>До-бемоль</item>
     </string-array>
-    <string-array name="minor_scales">
+
+    <string-array name="minor_tones">
         <item>Ля</item>
         <item>Ми</item>
         <item>Си</item>

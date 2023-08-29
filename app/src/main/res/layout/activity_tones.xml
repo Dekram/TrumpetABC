@@ -7,7 +7,7 @@
     android:background="@drawable/background_gradient"
     android:orientation="horizontal"
     android:padding="32dp"
-    tools:context=".ScalesActivity">
+    tools:context=".TonesActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/scales"
+            android:id="@+id/tones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -32,7 +32,7 @@
             android:layout_marginBottom="8dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/scales_c_dur"
+            android:src="@drawable/tones_c_dur"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_gravity="center_vertical"
-                android:entries="@array/minor_scales"
+                android:entries="@array/minor_tones"
                 android:theme="@style/spinnerTheme" />
 
         </LinearLayout>
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_gravity="center_vertical"
-                android:entries="@array/major_scales"
+                android:entries="@array/major_tones"
                 android:theme="@style/spinnerTheme" />
 
         </LinearLayout>

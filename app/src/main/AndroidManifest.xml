@@ -24,7 +24,7 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ScalesActivity"
+            android:name=".TonesActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
