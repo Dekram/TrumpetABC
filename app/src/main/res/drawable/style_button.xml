@@ -5,7 +5,7 @@
     <solid android:color="@color/primaryColor" />
     <stroke
         android:width="4dp"
-        android:color="@color/white"
+        android:color="@color/secondaryColor"
         android:dashWidth="32dp"
         android:dashGap="8dp" />
     <gradient
