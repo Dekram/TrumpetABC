@@ -6,4 +6,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="start_color">#000000</color>
     <color name="end_color">#D3B53A</color>
+    <color name="splashscreen_text">#88BE48</color>
 </resources>
