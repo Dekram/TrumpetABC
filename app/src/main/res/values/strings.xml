@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">Trumpet ABC</string>
     <string name="fingeringsButton">fingerings</string>
-    <string name="scalesButton">tones</string>
+    <string name="tonesButton">tones</string>
     <string name="note_s_cardsButton">note\'s cards</string>
-    <string name="major_scale_header">Major tone:</string>
-    <string name="minor_scale_header">Minor tone:</string>
+    <string name="major_scale_header">Major \n tone:</string>
+    <string name="minor_scale_header">Minor \n tone:</string>
 
     <string-array name="major_tones">
         <item>C-dur</item>
