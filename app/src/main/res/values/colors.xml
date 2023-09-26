@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primaryColor">#FF5722</color>
-    <color name="secondaryColor">#8BC34A</color>
+    <color name="secondaryColor">#EED293</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="start_color">#000000</color>
     <color name="end_color">#D3B53A</color>
-    <color name="splashscreen_text">#88BE48</color>
+    <color name="green_lime">#88BE48</color>
+    <color name="coffee_milk">#EED293</color>
 </resources>

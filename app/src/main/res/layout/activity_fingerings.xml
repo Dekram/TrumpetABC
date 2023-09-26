@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@color/green_lime"
     android:padding="32dp"
     tools:context=".FingeringsActivity">
 
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
+            android:background="@drawable/old_paper"
             android:src="@drawable/tones_c_dur" />
 
     </androidx.cardview.widget.CardView>
