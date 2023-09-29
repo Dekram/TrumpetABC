@@ -4,8 +4,8 @@
     <string name="fingeringsButton">аппликатура</string>
     <string name="tonesButton">тональности</string>
     <string name="note_s_cardsButton">Карточки нот</string>
-    <string name="major_scale_header">Мажорная тональность:</string>
-    <string name="minor_scale_header">Минорная тональность:</string>
+    <string name="major_scale_header">Мажорная \n тональность:</string>
+    <string name="minor_scale_header">Минорная \n тональность:</string>
 
     <string-array name="major_tones">
         <item>До</item>
