@@ -6,6 +6,8 @@
     <string name="note_s_cardsButton">Карточки нот</string>
     <string name="major_scale_header">Мажорная \n тональность:</string>
     <string name="minor_scale_header">Минорная \n тональность:</string>
+    <string name="image_of_the_note">Изображение ноты</string>
+    <string name="play_button">Кнопка проигрывания звука</string>
 
     <string-array name="major_tones">
         <item>До</item>
