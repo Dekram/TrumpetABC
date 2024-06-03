@@ -2,7 +2,7 @@ package com.dekram.trumpetabc.model
 
 interface ModelRepository {
 
-    fun loadFingerings()
+    fun loadFingerings(): Int
 
     fun loadTones()
 

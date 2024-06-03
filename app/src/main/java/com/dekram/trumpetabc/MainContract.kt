@@ -7,6 +7,7 @@ interface MainContract {
     }
 
     interface View: BaseView<Presenter> {
+        fun displayMainActivity()
 
         fun displayFingerings()
 
