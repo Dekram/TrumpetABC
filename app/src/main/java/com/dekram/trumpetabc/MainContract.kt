@@ -4,15 +4,21 @@ interface MainContract {
 
     interface Presenter: BasePresenter {
         fun onViewCreated()
+
+        fun onFingeringsButtonClicked()
+
+        fun onTonesButtonClicked()
+
+        fun onNotesCardsButtonClicked()
     }
 
     interface View: BaseView<Presenter> {
-        fun displayMainActivity()
+        fun showMainActivity()
 
-        fun displayFingerings()
+        fun showFingeringsScreen()
 
-        fun displayTones()
+        fun showTonesScreen()
 
-        fun displayNotesCards()
+        fun showNotesCardsScreen()
     }
 }

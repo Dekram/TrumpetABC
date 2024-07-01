@@ -10,18 +10,30 @@ class MainPresenter(view: MainContract.View, dependencyInjector: DependencyInjec
     private var view: MainContract.View? = view
 
     private fun loadMainActivity() {
-        view?.displayMainActivity()
+        //view?.showMainActivity()
     }
 
     fun loadFingerings() {
-        view?.displayFingerings()
+        //view?.showFingeringsScreen()
     }
 
     override fun onDestroy() {
-        this.view = null
+        //this.view = null
     }
 
     override fun onViewCreated() {
         loadMainActivity()
+    }
+
+    override fun onFingeringsButtonClicked() {
+        TODO("Not yet implemented")
+    }
+
+    override fun onTonesButtonClicked() {
+        TODO("Not yet implemented")
+    }
+
+    override fun onNotesCardsButtonClicked() {
+        TODO("Not yet implemented")
     }
 }

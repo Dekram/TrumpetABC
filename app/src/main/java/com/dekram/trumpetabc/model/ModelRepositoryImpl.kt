@@ -5,7 +5,7 @@ import com.dekram.trumpetabc.R
 
 class ModelRepositoryImpl : ModelRepository {
 
-    override fun loadFingerings(): Int {
+    override fun loadFingerings() {
         TODO("Not yet implemented")
     }
 
