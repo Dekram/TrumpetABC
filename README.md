@@ -28,7 +28,9 @@ A mobile application-assistant that help to learn play trumpet.
 
 ### Features:
 
-- Key indicators of company on one screen and advanced statistics of key indicators in one click
+- Basic fingerings for trumpet
+- All tones for daily exercises
+- Note's cards with playing sound
 - Userfrieldly UI
 - Multi-language support
 
