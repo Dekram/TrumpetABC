@@ -66,9 +66,7 @@ A mobile application-assistant that help to learn play trumpet.
 
 ## Screens
 
-<img src="screenshots/01.png" alt="image" width="30%">
-<img src="screenshots/02.png" alt="image" width="30%">
-<img src="screenshots/03.png" alt="image" width="30%">
+<img src="screenshots/01.png" alt="image" width="30%"> <img src="screenshots/02.png" alt="image" width="30%"> <img src="screenshots/03.png" alt="image" width="30%">
 
 </br>
 
