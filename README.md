@@ -66,7 +66,7 @@ A mobile application-assistant that help to learn play trumpet.
 
 ## Screens
 
- <img src="https://static.rustore.ru/apk/1986088383/content/SCREENSHOT/fc1dede9-0718-47b8-9f01-6ffff3b7e291.png" width="49%"> <img src="https://static.rustore.ru/apk/1986088383/content/SCREENSHOT/483d18b2-e82e-49a2-9ac6-c391b7e2ff5a.png" width="49%">
+![01.png](01.png) ![02.png](02.png) ![03.png](03.png)
 
 </br>
 
